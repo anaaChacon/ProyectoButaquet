@@ -242,7 +242,7 @@ public class SeleccionPago extends JFrame implements ItemListener, ActionListene
 		label_8.setBounds(673, 215, 244, 39);
 		panel_1.add(label_8);
 
-		JLabel label_9 = new JLabel(SeleccionDescuento.variablePrecioEntrada + "\u20AC\r\n");
+		JLabel label_9 = new JLabel((double)Math.round(SeleccionDescuento.variablePrecioEntrada*100)/100 + "\u20AC\r\n");
 		label_9.setHorizontalAlignment(SwingConstants.LEFT);
 		label_9.setForeground(SystemColor.controlHighlight);
 		label_9.setFont(new Font("Bebas Neue", Font.PLAIN, 30));
@@ -250,21 +250,21 @@ public class SeleccionPago extends JFrame implements ItemListener, ActionListene
 		label_9.setBounds(927, 75, 244, 39);
 		panel_1.add(label_9);
 
-		JLabel label_10 = new JLabel(SeleccionDescuento.variableDescuentos + "\u20AC\r\n");
+		JLabel label_10 = new JLabel((double)Math.round(SeleccionDescuento.variableDescuentos*100)/100 + "\u20AC\r\n");
 		label_10.setHorizontalAlignment(SwingConstants.LEFT);
 		label_10.setForeground(SystemColor.controlHighlight);
 		label_10.setFont(new Font("Bebas Neue", Font.PLAIN, 30));
 		label_10.setBounds(927, 112, 244, 39);
 		panel_1.add(label_10);
 
-		JLabel label_11 = new JLabel(SeleccionDescuento.precioConDescuento + "\u20AC");
+		JLabel label_11 = new JLabel((double)Math.round(SeleccionDescuento.precioConDescuento*100)/100 + "\u20AC");
 		label_11.setHorizontalAlignment(SwingConstants.LEFT);
 		label_11.setForeground(SystemColor.controlHighlight);
 		label_11.setFont(new Font("Bebas Neue", Font.PLAIN, 30));
 		label_11.setBounds(927, 149, 244, 39);
 		panel_1.add(label_11);
 
-		JLabel label_12 = new JLabel(SeleccionDescuento.precioConIva + "\u20AC");
+		JLabel label_12 = new JLabel((double)Math.round(SeleccionDescuento.precioConIva*100)/100 + "\u20AC");
 		label_12.setHorizontalAlignment(SwingConstants.LEFT);
 		label_12.setForeground(SystemColor.controlHighlight);
 		label_12.setFont(new Font("Bebas Neue", Font.PLAIN, 30));
@@ -278,7 +278,7 @@ public class SeleccionPago extends JFrame implements ItemListener, ActionListene
 		label_13.setBounds(673, 286, 244, 39);
 		panel_1.add(label_13);
 
-		JLabel label_14 = new JLabel(SeleccionDescuento.importeTotal + "\u20AC");
+		JLabel label_14 = new JLabel((double)Math.round(SeleccionDescuento.importeTotal*100)/100 + "\u20AC");
 		label_14.setHorizontalAlignment(SwingConstants.LEFT);
 		label_14.setForeground(SystemColor.controlHighlight);
 		label_14.setFont(new Font("Bebas Neue", Font.PLAIN, 48));

@@ -7,3 +7,6 @@ Cincuenta sombras más oscuras, 2017-02-15   18:00:00, Sala 2, 2
 Cincuenta sombras más oscuras, 2017-02-15   20:00:00, Sala 2, 2
 Cincuenta sombras más oscuras, 2017-02-15   18:00:00, Sala 2, 2
 Cincuenta sombras más oscuras, 2017-02-15   18:00:00, Sala 2, 2
+Cincuenta sombras más oscuras, 2017-02-15   18:00:00, Sala 2, 3
+Cincuenta sombras más oscuras, 2017-02-15   20:00:00, Sala 2, 3
+Cincuenta sombras más oscuras, 2017-02-15   18:00:00, Sala 2, 3
