@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-feb-2017 13:59:16 by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="models.Salas" table="salas" catalog="butaquet" optimistic-lock="version">
+        <id name="idSala" type="java.lang.Integer">
+            <column name="id_sala" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="cines" class="models.Cines" fetch="select">
+            <column name="cine_id" not-null="true" />
+        </many-to-one>
+        <property name="numSala" type="java.lang.Integer">
+            <column name="num_sala" />
+        </property>
+        <property name="filas" type="java.lang.Integer">
+            <column name="filas" />
+        </property>
+        <property name="columnas" type="int">
+            <column name="columnas" not-null="true" />
+        </property>
+        <set name="proyeccions" table="proyeccion" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="sala_id" not-null="true" />
+            </key>
+            <one-to-many class="models.Proyeccion" />
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-feb-2017 13:59:16 by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="models.Proyeccion" table="proyeccion" catalog="butaquet" optimistic-lock="version">
+        <id name="idProyeccion" type="java.lang.Integer">
+            <column name="id_proyeccion" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="peliculas" class="models.Peliculas" fetch="select">
+            <column name="pelicula_id" not-null="true" />
+        </many-to-one>
+        <many-to-one name="salas" class="models.Salas" fetch="select">
+            <column name="sala_id" not-null="true" />
+        </many-to-one>
+        <property name="hora" type="time">
+            <column name="hora" length="8" />
+        </property>
+        <property name="fecha" type="date">
+            <column name="fecha" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>

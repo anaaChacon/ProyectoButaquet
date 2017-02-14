@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-feb-2017 13:59:16 by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="models.Cines" table="cines" catalog="butaquet" optimistic-lock="version">
+        <id name="idCine" type="java.lang.Integer">
+            <column name="id_cine" />
+            <generator class="identity" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" length="30" />
+        </property>
+        <property name="cif" type="string">
+            <column name="cif" length="9" />
+        </property>
+        <property name="telefono" type="java.lang.Integer">
+            <column name="telefono" />
+        </property>
+        <property name="direccion" type="string">
+            <column name="direccion" length="60" />
+        </property>
+        <set name="salases" table="salas" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="cine_id" not-null="true" />
+            </key>
+            <one-to-many class="models.Salas" />
+        </set>
+        <set name="empleadoses" table="empleados" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="cine_id" not-null="true" />
+            </key>
+            <one-to-many class="models.Empleados" />
+        </set>
+    </class>
+</hibernate-mapping>
