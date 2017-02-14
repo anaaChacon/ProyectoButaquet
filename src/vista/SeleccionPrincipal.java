@@ -420,7 +420,10 @@ public class SeleccionPrincipal extends JFrame implements ActionListener {
 		btnNuevo.addActionListener(this);
 		panel.add(btnNuevo);
 		
+		ImageIcon logoV = new ImageIcon("./src/images/icotiket.png");
+		Image logo = logoV.getImage();
 		
+		setIconImage(logo);
 		setLocationRelativeTo(null);
 		contentPane.setLayout(null);
 		contentPane.add(panel);

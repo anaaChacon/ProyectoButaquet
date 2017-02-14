@@ -13,6 +13,7 @@ import controlador.SecondActivity;
 import java.awt.Color;
 import javax.swing.JLabel;
 import java.awt.Font;
+import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.DateFormat;
@@ -168,6 +169,10 @@ public class FinOperacion extends JFrame implements ActionListener{
 		btnCerrarSesin.addActionListener(this);
 		panel.add(btnCerrarSesin);
 		
+		ImageIcon logoV = new ImageIcon("./src/images/icotiket.png");
+		Image logo = logoV.getImage();
+		
+		setIconImage(logo);
 		setLocationRelativeTo(null);
 		setResizable(false);
 	}

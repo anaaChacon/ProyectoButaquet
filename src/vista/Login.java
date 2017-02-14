@@ -118,7 +118,7 @@ public class Login extends JFrame implements  ActionListener {
 		ImageIcon logoV = new ImageIcon("./src/images/icotiket.png");
 		Image logo = logoV.getImage();
 		
-		setIconImage(logo);
+		setIconImage(logo);  
 		setLocationRelativeTo(null);
 		setResizable(false);
 	}

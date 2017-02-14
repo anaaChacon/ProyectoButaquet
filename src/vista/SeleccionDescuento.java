@@ -14,6 +14,8 @@ import controlador.SecondActivity;
 import java.awt.Color;
 import javax.swing.JLabel;
 import java.awt.Font;
+import java.awt.Image;
+
 import javax.swing.SwingConstants;
 import javax.swing.JComboBox;
 import javax.swing.JTextField;
@@ -31,6 +33,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import java.text.DateFormat;
+import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -320,7 +323,7 @@ public class SeleccionDescuento extends JFrame implements ActionListener, ItemLi
 		panel_1.add(etiquetaDescuentoTotal);
 		
 		/*Sacar el 21% del iva del importe con descuento*/
-		//precioConIva = (precioConDescuento * 21) / 100;
+		
 		
 		etiquetaIva = new JLabel((double)Math.round(precioConIva*100)/100 + "\u20AC");
 		etiquetaIva.setHorizontalAlignment(SwingConstants.LEFT);
@@ -412,6 +415,10 @@ public class SeleccionDescuento extends JFrame implements ActionListener, ItemLi
 		);
 		panel_2.setLayout(gl_panel_2);
 		
+		ImageIcon logoV = new ImageIcon("./src/images/icotiket.png");
+		Image logo = logoV.getImage();
+		
+		setIconImage(logo);
 		setLocationRelativeTo(null);
 		setResizable(false);
 		
@@ -430,9 +437,9 @@ public class SeleccionDescuento extends JFrame implements ActionListener, ItemLi
 		
 		if(e.getSource() == btnPasoAtrs){
 			
-			carnetJove = 0;
-			desempleado = 0;
-			jubilado = 0;
+			//carnetJove = 0;
+			//desempleado = 0;
+			//jubilado = 0;
 			variableDescuentos = 0.0;
 			precioConDescuento = 0.0;
 			precioConIva = 0.0;
@@ -450,17 +457,17 @@ public class SeleccionDescuento extends JFrame implements ActionListener, ItemLi
 			jubilado = Integer.parseInt(comboBox_2.getSelectedItem().toString());
 	
 			variableDescuentos = Discounts.descuentos(carnetJove, desempleado, jubilado);
-			etiquetaDescuentos.setText(variableDescuentos + "\u20AC\r\n");
+			etiquetaDescuentos.setText((double)Math.round(variableDescuentos*100)/100 + "\u20AC\r\n");
 			
 			precioConDescuento = variablePrecioEntrada - variableDescuentos;
-			etiquetaDescuentoTotal.setText(precioConDescuento + "\u20AC");
+			etiquetaDescuentoTotal.setText((double)Math.round(precioConDescuento*100)/100 + "\u20AC");
 			/*Sacar el 21% del iva del importe con descuento*/
 			precioConIva = (precioConDescuento * 21) / 100;
-			etiquetaIva.setText(precioConIva + "\u20AC");
+			etiquetaIva.setText((double)Math.round(precioConIva*100)/100 + "\u20AC");
 			
 			/*SACAR EL IMPORTE TOTAL*/
 			importeTotal = precioConDescuento + precioConIva;
-			etiquetaImporteTotal.setText(importeTotal + "\u20AC");
+			etiquetaImporteTotal.setText((double)Math.round(importeTotal*100)/100 + "\u20AC");
 		
 			btnSacarCuenta.setEnabled(false);
 			button.setEnabled(true);

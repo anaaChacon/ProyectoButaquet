@@ -28,6 +28,8 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 import java.awt.Font;
+import java.awt.Image;
+
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
@@ -344,6 +346,11 @@ public class SeleccionPago extends JFrame implements ItemListener, ActionListene
 		btnSiguiente.setBounds(871, 382, 284, 56);
 		btnSiguiente.addActionListener(this);
 		panel_1.add(btnSiguiente);
+		
+		ImageIcon logoV = new ImageIcon("./src/images/icotiket.png");
+		Image logo = logoV.getImage();
+		
+		setIconImage(logo);
 		setLocationRelativeTo(null);
 		setResizable(false);
 
