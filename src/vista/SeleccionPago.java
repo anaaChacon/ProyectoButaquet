@@ -153,36 +153,29 @@ public class SeleccionPago extends JFrame implements ItemListener, ActionListene
 		lblEfectivo.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblEfectivo.setForeground(Color.WHITE);
 		lblEfectivo.setFont(new Font("Bebas Neue", Font.PLAIN, 30));
-		lblEfectivo.setBounds(0, 37, 244, 39);
+		lblEfectivo.setBounds(0, 80, 244, 39);
 		panel_1.add(lblEfectivo);
 
 		JLabel lblTarjetaCrditodbito = new JLabel("TARJETA CR\u00C9DITO/D\u00C9BITO");
 		lblTarjetaCrditodbito.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblTarjetaCrditodbito.setForeground(Color.WHITE);
 		lblTarjetaCrditodbito.setFont(new Font("Bebas Neue", Font.PLAIN, 30));
-		lblTarjetaCrditodbito.setBounds(0, 95, 244, 39);
+		lblTarjetaCrditodbito.setBounds(0, 138, 244, 39);
 		panel_1.add(lblTarjetaCrditodbito);
 
 		JLabel lblChequeRegalo = new JLabel("CHEQUE REGALO");
 		lblChequeRegalo.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblChequeRegalo.setForeground(Color.WHITE);
 		lblChequeRegalo.setFont(new Font("Bebas Neue", Font.PLAIN, 30));
-		lblChequeRegalo.setBounds(0, 153, 244, 39);
+		lblChequeRegalo.setBounds(0, 196, 244, 39);
 		panel_1.add(lblChequeRegalo);
 
 		JLabel lblCuponesGroupn = new JLabel("CUPONES, GROUP\u00D3N...");
 		lblCuponesGroupn.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblCuponesGroupn.setForeground(Color.WHITE);
 		lblCuponesGroupn.setFont(new Font("Bebas Neue", Font.PLAIN, 30));
-		lblCuponesGroupn.setBounds(0, 211, 244, 39);
+		lblCuponesGroupn.setBounds(0, 254, 244, 39);
 		panel_1.add(lblCuponesGroupn);
-
-		JLabel lblGratuito = new JLabel("GRATUITO");
-		lblGratuito.setHorizontalAlignment(SwingConstants.RIGHT);
-		lblGratuito.setForeground(Color.WHITE);
-		lblGratuito.setFont(new Font("Bebas Neue", Font.PLAIN, 30));
-		lblGratuito.setBounds(0, 269, 244, 39);
-		panel_1.add(lblGratuito);
 
 		btnImprimir = new JButton("Imprimir");
 		btnImprimir.setIcon(new ImageIcon("./src/images/imp_blac.png"));
@@ -190,7 +183,7 @@ public class SeleccionPago extends JFrame implements ItemListener, ActionListene
 		btnImprimir.setForeground(Color.WHITE);
 		btnImprimir.setFont(new Font("Bebas Neue", Font.PLAIN, 46));
 		btnImprimir.setBackground(new Color(0, 102, 255));
-		btnImprimir.setBounds(548, 382, 284, 56);
+		btnImprimir.setBounds(497, 382, 284, 56);
 		btnImprimir.setBorder(emptyBorder);
 		btnImprimir.setFocusable(false);
 		btnImprimir.addActionListener(this);
@@ -209,7 +202,7 @@ public class SeleccionPago extends JFrame implements ItemListener, ActionListene
 		btnPagar.setForeground(Color.WHITE);
 		btnPagar.setFont(new Font("Bebas Neue", Font.PLAIN, 46));
 		btnPagar.setBackground(new Color(0, 102, 255));
-		btnPagar.setBounds(224, 382, 284, 56);
+		btnPagar.setBounds(173, 382, 284, 56);
 		btnPagar.setBorder(emptyBorder);
 		btnPagar.setFocusable(false);
 		panel_1.add(btnPagar);
@@ -289,7 +282,7 @@ public class SeleccionPago extends JFrame implements ItemListener, ActionListene
 		JComboBox comboTarjeta = new JComboBox();
 		comboTarjeta.setFont(new Font("Bebas Neue", Font.PLAIN, 27));
 		comboTarjeta.setBackground(Color.WHITE);
-		comboTarjeta.setBounds(254, 98, 101, 36);
+		comboTarjeta.setBounds(254, 141, 101, 36);
 		comboTarjeta.addItem("Si");
 		comboTarjeta.addItem("No");
 		comboTarjeta.setSelectedIndex(1);
@@ -298,7 +291,7 @@ public class SeleccionPago extends JFrame implements ItemListener, ActionListene
 		JComboBox comboEfectivo = new JComboBox();
 		comboEfectivo.setFont(new Font("Bebas Neue", Font.PLAIN, 27));
 		comboEfectivo.setBackground(Color.WHITE);
-		comboEfectivo.setBounds(254, 40, 101, 36);
+		comboEfectivo.setBounds(254, 83, 101, 36);
 		comboEfectivo.addItem("Si");
 		comboEfectivo.addItem("No");
 		comboEfectivo.setSelectedIndex(1);
@@ -306,19 +299,10 @@ public class SeleccionPago extends JFrame implements ItemListener, ActionListene
 		panel_1.add(comboEfectivo);
 		panel_1.add(comboTarjeta);
 
-		JComboBox comboGratuito = new JComboBox();
-		comboGratuito.setFont(new Font("Bebas Neue", Font.PLAIN, 27));
-		comboGratuito.setBackground(Color.WHITE);
-		comboGratuito.setBounds(254, 272, 101, 36);
-		comboGratuito.addItem("Si");
-		comboGratuito.addItem("No");
-		comboGratuito.setSelectedIndex(1);
-		comboGratuito.addItemListener(this);
-
 		JComboBox comboCheque = new JComboBox();
 		comboCheque.setFont(new Font("Bebas Neue", Font.PLAIN, 27));
 		comboCheque.setBackground(Color.WHITE);
-		comboCheque.setBounds(254, 156, 101, 36);
+		comboCheque.setBounds(254, 199, 101, 36);
 		comboCheque.addItem("Si");
 		comboCheque.addItem("No");
 		comboCheque.setSelectedIndex(1);
@@ -328,13 +312,12 @@ public class SeleccionPago extends JFrame implements ItemListener, ActionListene
 		JComboBox comboCupon = new JComboBox();
 		comboCupon.setFont(new Font("Bebas Neue", Font.PLAIN, 27));
 		comboCupon.setBackground(Color.WHITE);
-		comboCupon.setBounds(254, 214, 101, 36);
+		comboCupon.setBounds(254, 257, 101, 36);
 		comboCupon.addItem("Si");
 		comboCupon.addItem("No");
 		comboCupon.setSelectedIndex(1);
 		comboCupon.addItemListener(this);
 		panel_1.add(comboCupon);
-		panel_1.add(comboGratuito);
 		
 		btnSiguiente = new JButton("SIGUIENTE");
 		btnSiguiente.setEnabled(false);
@@ -343,7 +326,7 @@ public class SeleccionPago extends JFrame implements ItemListener, ActionListene
 		btnSiguiente.setFocusable(false);
 		btnSiguiente.setBorder(emptyBorder);
 		btnSiguiente.setBackground(new Color(0, 102, 255));
-		btnSiguiente.setBounds(871, 382, 284, 56);
+		btnSiguiente.setBounds(820, 382, 284, 56);
 		btnSiguiente.addActionListener(this);
 		panel_1.add(btnSiguiente);
 		

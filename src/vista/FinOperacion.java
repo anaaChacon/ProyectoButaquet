@@ -98,24 +98,19 @@ public class FinOperacion extends JFrame implements ActionListener{
 		GroupLayout gl_panel_1 = new GroupLayout(panel_1);
 		gl_panel_1.setHorizontalGroup(
 			gl_panel_1.createParallelGroup(Alignment.LEADING)
-				.addGap(0, 1259, Short.MAX_VALUE)
 				.addGroup(gl_panel_1.createSequentialGroup()
 					.addGap(41)
 					.addComponent(label_8)
 					.addGap(18)
 					.addComponent(label_9)
-					.addPreferredGap(ComponentPlacement.RELATED, 732, Short.MAX_VALUE)
-					.addGroup(gl_panel_1.createParallelGroup(Alignment.TRAILING, false)
-						.addGroup(gl_panel_1.createSequentialGroup()
-							.addComponent(label_10)
-							.addGap(82))
-						.addGroup(gl_panel_1.createSequentialGroup()
-							.addComponent(label_11, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-							.addContainerGap())))
+					.addPreferredGap(ComponentPlacement.RELATED, 738, Short.MAX_VALUE)
+					.addGroup(gl_panel_1.createParallelGroup(Alignment.LEADING)
+						.addComponent(label_11, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+						.addComponent(label_10))
+					.addContainerGap())
 		);
 		gl_panel_1.setVerticalGroup(
 			gl_panel_1.createParallelGroup(Alignment.LEADING)
-				.addGap(0, 140, Short.MAX_VALUE)
 				.addGroup(gl_panel_1.createSequentialGroup()
 					.addContainerGap(119, Short.MAX_VALUE)
 					.addComponent(label_8)
@@ -155,7 +150,7 @@ public class FinOperacion extends JFrame implements ActionListener{
 		btnNuevaOperacin.setFocusable(false);
 		btnNuevaOperacin.setBorder(emptyBorder);
 		btnNuevaOperacin.setBackground(new Color(0, 102, 255));
-		btnNuevaOperacin.setBounds(327, 313, 284, 74);
+		btnNuevaOperacin.setBounds(328, 264, 284, 64);
 		btnNuevaOperacin.addActionListener(this);
 		panel.add(btnNuevaOperacin);
 		
@@ -165,7 +160,7 @@ public class FinOperacion extends JFrame implements ActionListener{
 		btnCerrarSesin.setFocusable(false);
 		btnCerrarSesin.setBorder(emptyBorder);
 		btnCerrarSesin.setBackground(new Color(0, 102, 255));
-		btnCerrarSesin.setBounds(660, 313, 284, 74);
+		btnCerrarSesin.setBounds(661, 264, 284, 64);
 		btnCerrarSesin.addActionListener(this);
 		panel.add(btnCerrarSesin);
 		

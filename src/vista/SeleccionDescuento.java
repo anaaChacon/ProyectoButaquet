@@ -242,7 +242,7 @@ public class SeleccionDescuento extends JFrame implements ActionListener, ItemLi
 		button.setForeground(Color.WHITE);
 		button.setFont(new Font("Bebas Neue", Font.PLAIN, 46));
 		button.setBackground(new Color(0, 102, 255));
-		button.setBounds(863, 382, 284, 56);
+		button.setBounds(834, 382, 284, 56);
 		button.addActionListener(this);
 		button.setBorder(emptyBorder);
 		button.setFocusable(false);
@@ -259,7 +259,7 @@ public class SeleccionDescuento extends JFrame implements ActionListener, ItemLi
 		btnPasoAtrs.setForeground(Color.WHITE);
 		btnPasoAtrs.setFont(new Font("Bebas Neue", Font.PLAIN, 46));
 		btnPasoAtrs.setBackground(new Color(0, 102, 255));
-		btnPasoAtrs.setBounds(194, 382, 284, 56);
+		btnPasoAtrs.setBounds(165, 382, 284, 56);
 		btnPasoAtrs.addActionListener(this);
 		btnPasoAtrs.setBorder(emptyBorder);
 		btnPasoAtrs.setFocusable(false);
@@ -356,7 +356,7 @@ public class SeleccionDescuento extends JFrame implements ActionListener, ItemLi
 		btnSacarCuenta.setFocusable(false);
 		btnSacarCuenta.setBorder(emptyBorder);
 		btnSacarCuenta.setBackground(new Color(0, 102, 255));
-		btnSacarCuenta.setBounds(528, 382, 284, 56);
+		btnSacarCuenta.setBounds(499, 382, 284, 56);
 		btnSacarCuenta.addActionListener(this);
 		panel_1.add(btnSacarCuenta);
 		

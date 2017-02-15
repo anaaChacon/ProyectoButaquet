@@ -28,6 +28,7 @@ public class Login extends JFrame implements  ActionListener {
 	 */
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
+	private JButton btnNuevoUsuario;
 	public static JTextField usuarioInt;
 	public static JPasswordField passwordField;
 	@SuppressWarnings("unused")
@@ -115,6 +116,24 @@ public class Login extends JFrame implements  ActionListener {
 		passwordField.setBounds(609, 358, 198, 41);
 		contentPane.add(passwordField);
 		
+		btnNuevoUsuario = new JButton("NUEVO USUARIO");
+		btnNuevoUsuario.setForeground(Color.WHITE);
+		btnNuevoUsuario.setFont(new Font("Bebas Neue", Font.PLAIN, 40));
+		btnNuevoUsuario.setFocusable(false);
+		btnNuevoUsuario.setBorder(emptyBorder);
+		btnNuevoUsuario.setBackground(new Color(0, 102, 255));
+		btnNuevoUsuario.setBounds(1033, 623, 221, 43);
+		btnNuevoUsuario.addActionListener(this);
+		contentPane.add(btnNuevoUsuario);
+		
+		JLabel lblVersinAdministrador = new JLabel("Versi\u00F3n Administrador");
+		lblVersinAdministrador.setHorizontalAlignment(SwingConstants.CENTER);
+		lblVersinAdministrador.setForeground(Color.LIGHT_GRAY);
+		lblVersinAdministrador.setFont(new Font("Bebas Neue", Font.PLAIN, 18));
+		lblVersinAdministrador.setBackground(Color.DARK_GRAY);
+		lblVersinAdministrador.setBounds(482, 588, 1244, 43);
+		contentPane.add(lblVersinAdministrador);
+		
 		ImageIcon logoV = new ImageIcon("./src/images/icotiket.png");
 		Image logo = logoV.getImage();
 		
@@ -141,6 +160,13 @@ public class Login extends JFrame implements  ActionListener {
 		}else{
 			
 			setVisible(true);
+		}
+		
+		if(e.getSource()==btnNuevoUsuario){
+			setVisible(false);
+			GestionUsuarios g = new GestionUsuarios();
+			g.setVisible(true);
+			
 		}
 		
 	

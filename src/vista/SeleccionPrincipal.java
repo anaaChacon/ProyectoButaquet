@@ -141,11 +141,14 @@ public class SeleccionPrincipal extends JFrame implements ActionListener {
 					.addComponent(lblNewLabel)
 					.addGap(18)
 					.addComponent(lblAragCinema)
-					.addPreferredGap(ComponentPlacement.RELATED, 747, Short.MAX_VALUE)
-					.addGroup(gl_datosCine.createParallelGroup(Alignment.LEADING)
-						.addComponent(lblUsuario)
-						.addComponent(lblLunes, GroupLayout.PREFERRED_SIZE, 224, GroupLayout.PREFERRED_SIZE))
-					.addGap(18))
+					.addPreferredGap(ComponentPlacement.RELATED, 711, Short.MAX_VALUE)
+					.addGroup(gl_datosCine.createParallelGroup(Alignment.TRAILING, false)
+						.addGroup(gl_datosCine.createSequentialGroup()
+							.addComponent(lblLunes, GroupLayout.PREFERRED_SIZE, 259, GroupLayout.PREFERRED_SIZE)
+							.addContainerGap())
+						.addGroup(gl_datosCine.createSequentialGroup()
+							.addComponent(lblUsuario, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+							.addGap(82))))
 		);
 		gl_datosCine.setVerticalGroup(
 			gl_datosCine.createParallelGroup(Alignment.LEADING)
@@ -388,11 +391,11 @@ public class SeleccionPrincipal extends JFrame implements ActionListener {
 		lblAsientoConPersona.setBounds(719, 473, 267, 39);
 		panel.add(lblAsientoConPersona);
 		
-		btnNewButton = new JButton("LISTO");
+		btnNewButton = new JButton("VER SALA");
 		btnNewButton.setBackground(new Color(0, 102, 255));
 		btnNewButton.setForeground(Color.WHITE);
 		btnNewButton.setFont(new Font("Bebas Neue", Font.PLAIN, 28));
-		btnNewButton.setBounds(233, 191, 107, 36);
+		btnNewButton.setBounds(133, 191, 107, 36);
 		btnNewButton.setBorder(emptyBorder);
 		btnNewButton.setFocusable(false);
 		btnNewButton.addActionListener(this);
@@ -409,11 +412,11 @@ public class SeleccionPrincipal extends JFrame implements ActionListener {
 		
 		panel.add(pintarButacas);
 		
-		btnNuevo = new JButton("NUEVO");
+		btnNuevo = new JButton("NUEVA OPERACI\u00D3N");
 		btnNuevo.setForeground(Color.WHITE);
 		btnNuevo.setFont(new Font("Bebas Neue", Font.PLAIN, 28));
 		btnNuevo.setBackground(new Color(0, 102, 255));
-		btnNuevo.setBounds(391, 191, 107, 36);
+		btnNuevo.setBounds(265, 191, 193, 36);
 		btnNuevo.setEnabled(false);
 		btnNuevo.setBorder(emptyBorder);
 		btnNuevo.setFocusable(false);

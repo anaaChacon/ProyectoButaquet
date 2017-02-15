@@ -10,3 +10,8 @@ Cincuenta sombras más oscuras, 2017-02-15   18:00:00, Sala 2, 2
 Cincuenta sombras más oscuras, 2017-02-15   18:00:00, Sala 2, 3
 Cincuenta sombras más oscuras, 2017-02-15   20:00:00, Sala 2, 3
 Cincuenta sombras más oscuras, 2017-02-15   18:00:00, Sala 2, 3
+Cincuenta sombras más oscuras, 2017-02-15   20:00:00, Sala 2, 2
+Las Furias, 2017-02-15   20:30:00, Sala 1, 2
+Las Furias, 2017-02-15   20:30:00, Sala 1, 2
+Casablanca, 2017-02-15   17:00:00, Sala 4, 2
+Ballerina, 2017-02-15   18:00:00, Sala 5, 3
